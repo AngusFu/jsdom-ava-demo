@@ -27,8 +27,8 @@ test('点击测试', async t => {
     $div.trigger('click');
 
     console.log(colorAfterClick = $div.css('background-color'));
-    
-    t.notDeepEqual(colorBeforeClick, colorAfterClick, 'jquery exists');
+   
+    t.not(colorBeforeClick, colorAfterClick, 'bgColor changed');
 });
 
 
