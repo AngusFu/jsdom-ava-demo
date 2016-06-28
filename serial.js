@@ -28,7 +28,7 @@ test.serial('点击测试', async t => {
 
     console.log(colorAfterClick = $div.css('background-color'));
     
-    t.notDeepEqual(colorBeforeClick, colorAfterClick, 'jquery exists');
+    t.not(colorBeforeClick, colorAfterClick, 'bgColor changed');
 });
 
 
